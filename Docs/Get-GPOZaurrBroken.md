@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrBroken
+# Get-GPORevBroken
 
 ## SYNOPSIS
 Detects broken or otherwise damaged Group Policies
@@ -13,7 +13,7 @@ Detects broken or otherwise damaged Group Policies
 ## SYNTAX
 
 ```
-Get-GPOZaurrBroken [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-ExcludeDomainControllers] <String[]>]
+Get-GPORevBroken [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-ExcludeDomainControllers] <String[]>]
  [[-IncludeDomains] <String[]>] [[-IncludeDomainControllers] <String[]>] [-SkipRODC]
  [[-ExtendedForestInformation] <IDictionary>] [-VerifyDomainControllers] [<CommonParameters>]
 ```
@@ -31,7 +31,7 @@ It provides few statuses:
 
 ### EXAMPLE 1
 ```
-Get-GPOZaurrBroken -Verbose | Format-Table
+Get-GPORevBroken -Verbose | Format-Table
 ```
 
 ## PARAMETERS

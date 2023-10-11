@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrPermissionConsistency
+# Get-GPORevPermissionConsistency
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -14,21 +14,21 @@ schema: 2.0.0
 
 ### Type (Default)
 ```
-Get-GPOZaurrPermissionConsistency [-Type <String[]>] [-Forest <String>] [-ExcludeDomains <String[]>]
+Get-GPORevPermissionConsistency [-Type <String[]>] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>] [-IncludeGPOObject]
  [-VerifyInheritance] [<CommonParameters>]
 ```
 
 ### GPOName
 ```
-Get-GPOZaurrPermissionConsistency [-GPOName <String>] [-Forest <String>] [-ExcludeDomains <String[]>]
+Get-GPORevPermissionConsistency [-GPOName <String>] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>] [-IncludeGPOObject]
  [-VerifyInheritance] [<CommonParameters>]
 ```
 
 ### GPOGUID
 ```
-Get-GPOZaurrPermissionConsistency [-GPOGuid <String>] [-Forest <String>] [-ExcludeDomains <String[]>]
+Get-GPORevPermissionConsistency [-GPOGuid <String>] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>] [-IncludeGPOObject]
  [-VerifyInheritance] [<CommonParameters>]
 ```

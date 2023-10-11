@@ -23,7 +23,7 @@ function Get-GPOPrivLink {
                 continue
             }
         }
-        $OutputGPOs = Get-PrivGPOZaurrLink -Object $Object -Limited:$Limited.IsPresent -GPOCache $GPOCache
+        $OutputGPOs = Get-PrivGPORevLink -Object $Object -Limited:$Limited.IsPresent -GPOCache $GPOCache
         foreach ($OutputGPO in $OutputGPOs) {
             if (-not $SkipDuplicates) {
                 $OutputGPO

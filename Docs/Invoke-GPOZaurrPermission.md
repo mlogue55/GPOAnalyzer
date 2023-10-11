@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Invoke-GPOZaurrPermission
+# Invoke-GPORevPermission
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -14,7 +14,7 @@ schema: 2.0.0
 
 ### Level
 ```
-Invoke-GPOZaurrPermission [[-PermissionRules] <ScriptBlock>] -Level <Int32> -Limit <Int32> [-Type <String[]>]
+Invoke-GPORevPermission [[-PermissionRules] <ScriptBlock>] -Level <Int32> -Limit <Int32> [-Type <String[]>]
  [-ApprovedGroups <Array>] [-Trustee <Array>] [-TrusteePermissionType <GPPermissionType>]
  [-TrusteeType <String>] [-GPOCache <IDictionary>] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>] [-LimitAdministrativeGroupsToDomain]
@@ -23,7 +23,7 @@ Invoke-GPOZaurrPermission [[-PermissionRules] <ScriptBlock>] -Level <Int32> -Lim
 
 ### Linked
 ```
-Invoke-GPOZaurrPermission [[-PermissionRules] <ScriptBlock>] -Linked <String> [-Type <String[]>]
+Invoke-GPORevPermission [[-PermissionRules] <ScriptBlock>] -Linked <String> [-Type <String[]>]
  [-ApprovedGroups <Array>] [-Trustee <Array>] [-TrusteePermissionType <GPPermissionType>]
  [-TrusteeType <String>] [-GPOCache <IDictionary>] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>] [-LimitAdministrativeGroupsToDomain]
@@ -32,7 +32,7 @@ Invoke-GPOZaurrPermission [[-PermissionRules] <ScriptBlock>] -Linked <String> [-
 
 ### ADObject
 ```
-Invoke-GPOZaurrPermission [[-PermissionRules] <ScriptBlock>] -ADObject <ADObject[]> [-Type <String[]>]
+Invoke-GPORevPermission [[-PermissionRules] <ScriptBlock>] -ADObject <ADObject[]> [-Type <String[]>]
  [-ApprovedGroups <Array>] [-Trustee <Array>] [-TrusteePermissionType <GPPermissionType>]
  [-TrusteeType <String>] [-GPOCache <IDictionary>] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>] [-LimitAdministrativeGroupsToDomain]
@@ -41,7 +41,7 @@ Invoke-GPOZaurrPermission [[-PermissionRules] <ScriptBlock>] -ADObject <ADObject
 
 ### Filter
 ```
-Invoke-GPOZaurrPermission [[-PermissionRules] <ScriptBlock>] [-Filter <String>] [-SearchBase <String>]
+Invoke-GPORevPermission [[-PermissionRules] <ScriptBlock>] [-Filter <String>] [-SearchBase <String>]
  [-SearchScope <ADSearchScope>] [-Type <String[]>] [-ApprovedGroups <Array>] [-Trustee <Array>]
  [-TrusteePermissionType <GPPermissionType>] [-TrusteeType <String>] [-GPOCache <IDictionary>]
  [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
@@ -51,7 +51,7 @@ Invoke-GPOZaurrPermission [[-PermissionRules] <ScriptBlock>] [-Filter <String>] 
 
 ### GPOName
 ```
-Invoke-GPOZaurrPermission [[-PermissionRules] <ScriptBlock>] [-GPOName <String>] [-Type <String[]>]
+Invoke-GPORevPermission [[-PermissionRules] <ScriptBlock>] [-GPOName <String>] [-Type <String[]>]
  [-ApprovedGroups <Array>] [-Trustee <Array>] [-TrusteePermissionType <GPPermissionType>]
  [-TrusteeType <String>] [-GPOCache <IDictionary>] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>] [-LimitAdministrativeGroupsToDomain]
@@ -60,7 +60,7 @@ Invoke-GPOZaurrPermission [[-PermissionRules] <ScriptBlock>] [-GPOName <String>]
 
 ### GPOGUID
 ```
-Invoke-GPOZaurrPermission [[-PermissionRules] <ScriptBlock>] [-GPOGuid <String>] [-Type <String[]>]
+Invoke-GPORevPermission [[-PermissionRules] <ScriptBlock>] [-GPOGuid <String>] [-Type <String[]>]
  [-ApprovedGroups <Array>] [-Trustee <Array>] [-TrusteePermissionType <GPPermissionType>]
  [-TrusteeType <String>] [-GPOCache <IDictionary>] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>] [-LimitAdministrativeGroupsToDomain]

@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrBrokenLink
+# Get-GPORevBrokenLink
 
 ## SYNOPSIS
 Finds any GPO link that doesn't have a matching GPO (already removed GPO).
@@ -13,7 +13,7 @@ Finds any GPO link that doesn't have a matching GPO (already removed GPO).
 ## SYNTAX
 
 ```
-Get-GPOZaurrBrokenLink [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>]
+Get-GPORevBrokenLink [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>]
  [[-ExtendedForestInformation] <IDictionary>] [<CommonParameters>]
 ```
 
@@ -24,12 +24,12 @@ Finds any GPO link that doesn't have a matching GPO (already removed GPO).
 
 ### EXAMPLE 1
 ```
-Get-GPOZaurrBrokenLink -Verbose | Format-Table -AutoSize *
+Get-GPORevBrokenLink -Verbose | Format-Table -AutoSize *
 ```
 
 ### EXAMPLE 2
 ```
-Get-GPOZaurrBrokenLink -Verbose -IncludeDomains ad.evotec.pl | Format-Table -AutoSize *
+Get-GPORevBrokenLink -Verbose -IncludeDomains ad.evotec.pl | Format-Table -AutoSize *
 ```
 
 ## PARAMETERS

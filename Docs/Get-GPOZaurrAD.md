@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrAD
+# Get-GPORevAD
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -14,21 +14,21 @@ schema: 2.0.0
 
 ### Default (Default)
 ```
-Get-GPOZaurrAD [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
+Get-GPORevAD [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  [-DateFrom <DateTime>] [-DateTo <DateTime>] [-DateRange <String>] [-DateProperty <String[]>]
  [-ExtendedForestInformation <IDictionary>] [<CommonParameters>]
 ```
 
 ### GPOName
 ```
-Get-GPOZaurrAD [-GPOName <String>] [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
+Get-GPORevAD [-GPOName <String>] [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  [-DateFrom <DateTime>] [-DateTo <DateTime>] [-DateRange <String>] [-DateProperty <String[]>]
  [-ExtendedForestInformation <IDictionary>] [<CommonParameters>]
 ```
 
 ### GPOGUID
 ```
-Get-GPOZaurrAD [-GPOGuid <String>] [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
+Get-GPORevAD [-GPOGuid <String>] [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  [-DateFrom <DateTime>] [-DateTo <DateTime>] [-DateRange <String>] [-DateProperty <String[]>]
  [-ExtendedForestInformation <IDictionary>] [<CommonParameters>]
 ```

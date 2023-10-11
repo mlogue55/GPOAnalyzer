@@ -1,6 +1,6 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
@@ -33,7 +33,7 @@ The goal is to support all cmdlets.
 
 ### EXAMPLE 1
 ```
-Optimize-GPOZaurr -All -WhatIf -Verbose -LimitProcessing 2 {
+Optimize-GPORev -All -WhatIf -Verbose -LimitProcessing 2 {
 ```
 
 Skip-GroupPolicy -Name 'TEST | Drive Mapping 1'
@@ -42,7 +42,7 @@ Skip-GroupPolicy -Name 'TEST | Drive Mapping 1'
 
 ### EXAMPLE 2
 ```
-Remove-GPOZaurr -Type Empty, Unlinked -BackupPath "$Env:UserProfile\Desktop\GPO" -BackupDated -LimitProcessing 2 -Verbose -WhatIf {
+Remove-GPORev -Type Empty, Unlinked -BackupPath "$Env:UserProfile\Desktop\GPO" -BackupDated -LimitProcessing 2 -Verbose -WhatIf {
 ```
 
 Skip-GroupPolicy -Name 'TEST | Drive Mapping 1'

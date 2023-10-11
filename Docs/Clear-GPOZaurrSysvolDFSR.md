@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Clear-GPOZaurrSysvolDFSR
+# Clear-GPORevSysvolDFSR
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -13,7 +13,7 @@ schema: 2.0.0
 ## SYNTAX
 
 ```
-Clear-GPOZaurrSysvolDFSR [[-Forest] <String>] [[-ExcludeDomains] <String[]>]
+Clear-GPORevSysvolDFSR [[-Forest] <String>] [[-ExcludeDomains] <String[]>]
  [[-ExcludeDomainControllers] <String[]>] [[-IncludeDomains] <String[]>]
  [[-IncludeDomainControllers] <String[]>] [-SkipRODC] [[-ExtendedForestInformation] <IDictionary>]
  [[-LimitProcessing] <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]

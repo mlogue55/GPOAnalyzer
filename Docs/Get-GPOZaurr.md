@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurr
+# Get-GPORev
 
 ## SYNOPSIS
 Gets information about all Group Policies.
@@ -14,7 +14,7 @@ Similar to what Get-GPO provides by default.
 ## SYNTAX
 
 ```
-Get-GPOZaurr [[-ExcludeGroupPolicies] <ScriptBlock>] [[-GPOName] <String>] [[-GPOGuid] <String>]
+Get-GPORev [[-ExcludeGroupPolicies] <ScriptBlock>] [[-GPOName] <String>] [[-GPOGuid] <String>]
  [[-Type] <String[]>] [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>]
  [[-ExtendedForestInformation] <IDictionary>] [[-GPOPath] <String[]>] [-PermissionsOnly] [-OwnerOnly]
  [-Limited] [[-ADAdministrativeGroups] <IDictionary>] [<CommonParameters>]
@@ -28,21 +28,21 @@ Similar to what Get-GPO provides by default.
 
 ### EXAMPLE 1
 ```
-$GPOs = Get-GPOZaurr
+$GPOs = Get-GPORev
 ```
 
 $GPOs | Format-Table DisplayName, Owner, OwnerSID, OwnerType
 
 ### EXAMPLE 2
 ```
-$GPO = Get-GPOZaurr -GPOName 'ALL | Allow use of biometrics'
+$GPO = Get-GPORev -GPOName 'ALL | Allow use of biometrics'
 ```
 
 $GPO | Format-List *
 
 ### EXAMPLE 3
 ```
-$GPOS = Get-GPOZaurr -ExcludeGroupPolicies {
+$GPOS = Get-GPORev -ExcludeGroupPolicies {
 ```
 
 Skip-GroupPolicy -Name 'de14_usr_std'

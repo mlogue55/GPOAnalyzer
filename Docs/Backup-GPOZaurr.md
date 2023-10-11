@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Backup-GPOZaurr
+# Backup-GPORev
 
 ## SYNOPSIS
 Provides Backup functionality to Group Policies
@@ -13,7 +13,7 @@ Provides Backup functionality to Group Policies
 ## SYNTAX
 
 ```
-Backup-GPOZaurr [[-LimitProcessing] <Int32>] [[-Type] <String[]>] [[-Forest] <String>]
+Backup-GPORev [[-LimitProcessing] <Int32>] [[-Type] <String[]>] [[-Forest] <String>]
  [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>] [[-ExtendedForestInformation] <IDictionary>]
  [[-BackupPath] <String>] [-BackupDated] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -25,14 +25,14 @@ Provides Backup functionality to Group Policies
 
 ### EXAMPLE 1
 ```
-$GPOSummary = Backup-GPOZaurr -BackupPath "$Env:UserProfile\Desktop\GPO" -Verbose -Type All
+$GPOSummary = Backup-GPORev -BackupPath "$Env:UserProfile\Desktop\GPO" -Verbose -Type All
 ```
 
 $GPOSummary | Format-Table # only if you want to display output of backup
 
 ### EXAMPLE 2
 ```
-$GPOSummary = Backup-GPOZaurr -BackupPath "$Env:UserProfile\Desktop\GPO" -Verbose -Type All -BackupDated
+$GPOSummary = Backup-GPORev -BackupPath "$Env:UserProfile\Desktop\GPO" -Verbose -Type All -BackupDated
 ```
 
 $GPOSummary | Format-Table # only if you want to display output of backup

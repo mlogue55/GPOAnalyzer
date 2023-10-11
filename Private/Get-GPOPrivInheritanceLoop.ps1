@@ -25,7 +25,7 @@ function Get-GPOPrivInheritanceLoop {
                     try {
                         $ADObjectGPO = Get-ADObject @Splat
                     } catch {
-                        Write-Warning "Get-GPOZaurrLink - Get-ADObject error $($_.Exception.Message)"
+                        Write-Warning "Get-GPORevLink - Get-ADObject error $($_.Exception.Message)"
                     }
                     Get-GPOPrivInheritance -CacheReturnedGPOs $CacheReturnedGPOs -ADObject $ADObjectGPO -Domain $Domain -ForestInformation $ForestInformation
                 }
@@ -36,7 +36,7 @@ function Get-GPOPrivInheritanceLoop {
                     try {
                         $ADObjectGPO = Get-ADObject @Splat
                     } catch {
-                        Write-Warning "Get-GPOZaurrLink - Get-ADObject error $($_.Exception.Message)"
+                        Write-Warning "Get-GPORevLink - Get-ADObject error $($_.Exception.Message)"
                     }
                     Get-GPOPrivInheritance -CacheReturnedGPOs $CacheReturnedGPOs -ADObject $ADObjectGPO -Domain $Domain -ForestInformation $ForestInformation
                 }
@@ -51,7 +51,7 @@ function Get-GPOPrivInheritanceLoop {
                     try {
                         $ADObjectGPO = Get-ADObject @Splat
                     } catch {
-                        Write-Warning "Get-GPOZaurrLink - Get-ADObject error $($_.Exception.Message)"
+                        Write-Warning "Get-GPORevLink - Get-ADObject error $($_.Exception.Message)"
                     }
                     Get-GPOPrivInheritance -CacheReturnedGPOs $CacheReturnedGPOs -ADObject $ADObjectGPO -Domain $Domain -ForestInformation $ForestInformation -SkipDomainRoot -SkipDomainControllers
                 }
@@ -81,7 +81,7 @@ function Get-GPOPrivInheritanceLoop {
                 try {
                     $ADObjectGPO = Get-ADObject @Splat
                 } catch {
-                    Write-Warning "Get-GPOZaurrLink - Get-ADObject error $($_.Exception.Message)"
+                    Write-Warning "Get-GPORevLink - Get-ADObject error $($_.Exception.Message)"
                 }
                 Get-GPOPrivInheritance -CacheReturnedGPOs $CacheReturnedGPOs -ADObject $ADObjectGPO -Domain $Domain -ForestInformation $ForestInformation
             }

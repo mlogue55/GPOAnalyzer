@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrPermissionIssue
+# Get-GPORevPermissionIssue
 
 ## SYNOPSIS
 Detects Group Policy missing Authenticated Users permission while not having higher permissions.
@@ -13,7 +13,7 @@ Detects Group Policy missing Authenticated Users permission while not having hig
 ## SYNTAX
 
 ```
-Get-GPOZaurrPermissionIssue [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>]
+Get-GPORevPermissionIssue [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>]
  [[-ExtendedForestInformation] <IDictionary>] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Detects Group Policy missing Authenticated Users permission while not having hig
 
 ### EXAMPLE 1
 ```
-$Issues = Get-GPOZaurrPermissionIssue
+$Issues = Get-GPORevPermissionIssue
 ```
 
 $Issues | Format-Table

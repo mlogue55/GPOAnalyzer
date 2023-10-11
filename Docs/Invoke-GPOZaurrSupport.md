@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Invoke-GPOZaurrSupport
+# Invoke-GPORevSupport
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -13,7 +13,7 @@ schema: 2.0.0
 ## SYNTAX
 
 ```
-Invoke-GPOZaurrSupport [[-Type] <String>] [[-ComputerName] <String>] [[-UserName] <String>] [[-Path] <String>]
+Invoke-GPORevSupport [[-Type] <String>] [[-ComputerName] <String>] [[-UserName] <String>] [[-Path] <String>]
  [[-Splitter] <String>] [-PreventShow] [-Online] [<CommonParameters>]
 ```
 

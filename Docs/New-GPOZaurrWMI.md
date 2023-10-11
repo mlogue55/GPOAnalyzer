@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# New-GPOZaurrWMI
+# New-GPORevWMI
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -13,7 +13,7 @@ schema: 2.0.0
 ## SYNTAX
 
 ```
-New-GPOZaurrWMI [-Name] <String> [[-Description] <String>] [[-Namespace] <String>] [-Query] <String>
+New-GPORevWMI [-Name] <String> [[-Description] <String>] [[-Namespace] <String>] [-Query] <String>
  [-SkipQueryCheck] [-Force] [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>]
  [[-ExtendedForestInformation] <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```

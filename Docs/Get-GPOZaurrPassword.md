@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrPassword
+# Get-GPORevPassword
 
 ## SYNOPSIS
 Tries to find CPassword in Group Policies or given path and translate it to readable value
@@ -13,7 +13,7 @@ Tries to find CPassword in Group Policies or given path and translate it to read
 ## SYNTAX
 
 ```
-Get-GPOZaurrPassword [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>]
+Get-GPORevPassword [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>]
  [[-ExtendedForestInformation] <IDictionary>] [[-GPOPath] <String[]>] [<CommonParameters>]
 ```
 
@@ -24,12 +24,12 @@ Tries to find CPassword in Group Policies or given path and translate it to read
 
 ### EXAMPLE 1
 ```
-Get-GPOZaurrPassword -GPOPath 'C:\Users\przemyslaw.klys\Desktop\GPOExport_2020.10.12'
+Get-GPORevPassword -GPOPath 'C:\Users\przemyslaw.klys\Desktop\GPOExport_2020.10.12'
 ```
 
 ### EXAMPLE 2
 ```
-Get-GPOZaurrPassword
+Get-GPORevPassword
 ```
 
 ## PARAMETERS

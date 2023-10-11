@@ -78,7 +78,7 @@
 
 
                 <#
-                [DBG]: PS C:\Support\GitHub\GpoZaurr> $Entry.Properties.Task.Triggers.EventTrigger
+                [DBG]: PS C:\Support\GitHub\GPORev> $Entry.Properties.Task.Triggers.EventTrigger
 
                 Enabled Subscription
                 ------- ------------

@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrWMI
+# Get-GPORevWMI
 
 ## SYNOPSIS
 Get Group Policy WMI filter
@@ -13,7 +13,7 @@ Get Group Policy WMI filter
 ## SYNTAX
 
 ```
-Get-GPOZaurrWMI [[-Guid] <Guid[]>] [[-Name] <String[]>] [[-Forest] <String>] [[-ExcludeDomains] <String[]>]
+Get-GPORevWMI [[-Guid] <Guid[]>] [[-Name] <String[]>] [[-Forest] <String>] [[-ExcludeDomains] <String[]>]
  [[-IncludeDomains] <String[]>] [[-ExtendedForestInformation] <IDictionary>] [-AsHashtable]
  [<CommonParameters>]
 ```
@@ -25,12 +25,12 @@ Get Group Policy WMI filter
 
 ### EXAMPLE 1
 ```
-Get-GPOZaurrWMI -AsHashtable
+Get-GPORevWMI -AsHashtable
 ```
 
 ### EXAMPLE 2
 ```
-Get-GPOZaurrWMI | Format-Table
+Get-GPORevWMI | Format-Table
 ```
 
 ## PARAMETERS

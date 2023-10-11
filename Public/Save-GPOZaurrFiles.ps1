@@ -1,4 +1,4 @@
-﻿function Save-GPOZaurrFiles {
+﻿function Save-GPORevFiles {
     <#
     .SYNOPSIS
     Exports GPO XML data to files and saves it to a given path
@@ -25,7 +25,7 @@
     Delete existing files before saving new ones
 
     .EXAMPLE
-    Save-GPOZaurrFiles -GPOPath 'C:\Support\GitHub\GpoZaurr\Ignore\GPOExportEvotec' -DeleteExisting -Verbose
+    Save-GPORevFiles -GPOPath 'C:\Support\GitHub\GPORev\Ignore\GPOExportEvotec' -DeleteExisting -Verbose
 
     .NOTES
     General notes
@@ -43,17 +43,17 @@
         if ($DeleteExisting) {
             $Test = Test-Path -LiteralPath $GPOPath
             if ($Test) {
-                Write-Verbose "Save-GPOZaurrFiles - Removing existing content in $GPOPath"
+                Write-Verbose "Save-GPORevFiles - Removing existing content in $GPOPath"
                 Remove-Item -LiteralPath $GPOPath -Recurse
             }
         }
         $null = New-Item -ItemType Directory -Path $GPOPath -Force
-        Write-Verbose "Save-GPOZaurrFiles - Gathering GPO data"
+        Write-Verbose "Save-GPORevFiles - Gathering GPO data"
         $Count = 0
-        $GPOs = Get-GPOZaurrAD -Forest $Forest -IncludeDomains $IncludeDomains -ExcludeDomains $ExcludeDomains -ExtendedForestInformation $ExtendedForestInformation
+        $GPOs = Get-GPORevAD -Forest $Forest -IncludeDomains $IncludeDomains -ExcludeDomains $ExcludeDomains -ExtendedForestInformation $ExtendedForestInformation
         foreach ($GPO in $GPOS) {
             $Count++
-            Write-Verbose "Save-GPOZaurrFiles - Processing GPO ($Count/$($GPOS.Count)) $($GPO.DomainName) | $($GPO.DisplayName)"
+            Write-Verbose "Save-GPORevFiles - Processing GPO ($Count/$($GPOS.Count)) $($GPO.DomainName) | $($GPO.DisplayName)"
             $XMLContent = Get-GPOReport -ID $GPO.Guid -ReportType XML -Domain $GPO.DomainName
             $GPODOmainFolder = [io.path]::Combine($GPOPath, $GPO.DomainName)
             if (-not (Test-Path -Path $GPODOmainFolder)) {

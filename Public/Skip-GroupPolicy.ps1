@@ -13,13 +13,13 @@
     Define DomainName where Group Policy is located. Otherwise each domain will be checked and skipped if found with same name.
 
     .EXAMPLE
-    Optimize-GPOZaurr -All -WhatIf -Verbose -LimitProcessing 2 {
+    Optimize-GPORev -All -WhatIf -Verbose -LimitProcessing 2 {
         Skip-GroupPolicy -Name 'TEST | Drive Mapping 1'
         Skip-GroupPolicy -Name 'TEST | Drive Mapping 2'
     }
 
     .EXAMPLE
-    Remove-GPOZaurr -Type Empty, Unlinked -BackupPath "$Env:UserProfile\Desktop\GPO" -BackupDated -LimitProcessing 2 -Verbose -WhatIf {
+    Remove-GPORev -Type Empty, Unlinked -BackupPath "$Env:UserProfile\Desktop\GPO" -BackupDated -LimitProcessing 2 -Verbose -WhatIf {
         Skip-GroupPolicy -Name 'TEST | Drive Mapping 1'
         Skip-GroupPolicy -Name 'TEST | Drive Mapping 2' -DomaiName 'ad.evotec.pl'
     }

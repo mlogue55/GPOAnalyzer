@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrDictionary
+# Get-GPORevDictionary
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -13,7 +13,7 @@ schema: 2.0.0
 ## SYNTAX
 
 ```
-Get-GPOZaurrDictionary [[-Splitter] <String>] [<CommonParameters>]
+Get-GPORevDictionary [[-Splitter] <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

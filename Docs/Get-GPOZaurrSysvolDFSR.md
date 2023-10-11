@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrSysvolDFSR
+# Get-GPORevSysvolDFSR
 
 ## SYNOPSIS
 Gets DFSR information from the SYSVOL DFSR
@@ -13,7 +13,7 @@ Gets DFSR information from the SYSVOL DFSR
 ## SYNTAX
 
 ```
-Get-GPOZaurrSysvolDFSR [[-Forest] <String>] [[-ExcludeDomains] <String[]>]
+Get-GPORevSysvolDFSR [[-Forest] <String>] [[-ExcludeDomains] <String[]>]
  [[-ExcludeDomainControllers] <String[]>] [[-IncludeDomains] <String[]>]
  [[-IncludeDomainControllers] <String[]>] [-SkipRODC] [[-ExtendedForestInformation] <IDictionary>]
  [[-SearchDFSR] <String>] [<CommonParameters>]
@@ -26,7 +26,7 @@ Gets DFSR information from the SYSVOL DFSR
 
 ### EXAMPLE 1
 ```
-$DFSR = Get-GPOZaurrSysvolDFSR
+$DFSR = Get-GPORevSysvolDFSR
 ```
 
 $DFSR | Format-Table *

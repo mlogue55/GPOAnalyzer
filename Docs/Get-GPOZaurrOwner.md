@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrOwner
+# Get-GPORevOwner
 
 ## SYNOPSIS
 Gets owners of GPOs from Active Directory and SYSVOL
@@ -14,21 +14,21 @@ Gets owners of GPOs from Active Directory and SYSVOL
 
 ### Default (Default)
 ```
-Get-GPOZaurrOwner [-IncludeSysvol] [-SkipBroken] [-Forest <String>] [-ExcludeDomains <String[]>]
+Get-GPORevOwner [-IncludeSysvol] [-SkipBroken] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>]
  [-ADAdministrativeGroups <IDictionary>] [-ApprovedOwner <String[]>] [<CommonParameters>]
 ```
 
 ### GPOName
 ```
-Get-GPOZaurrOwner [-GPOName <String>] [-IncludeSysvol] [-SkipBroken] [-Forest <String>]
+Get-GPORevOwner [-GPOName <String>] [-IncludeSysvol] [-SkipBroken] [-Forest <String>]
  [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>]
  [-ADAdministrativeGroups <IDictionary>] [-ApprovedOwner <String[]>] [<CommonParameters>]
 ```
 
 ### GPOGUID
 ```
-Get-GPOZaurrOwner [-GPOGuid <String>] [-IncludeSysvol] [-SkipBroken] [-Forest <String>]
+Get-GPORevOwner [-GPOGuid <String>] [-IncludeSysvol] [-SkipBroken] [-Forest <String>]
  [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>]
  [-ADAdministrativeGroups <IDictionary>] [-ApprovedOwner <String[]>] [<CommonParameters>]
 ```
@@ -40,12 +40,12 @@ Gets owners of GPOs from Active Directory and SYSVOL
 
 ### EXAMPLE 1
 ```
-Get-GPOZaurrOwner -Verbose -IncludeSysvol
+Get-GPORevOwner -Verbose -IncludeSysvol
 ```
 
 ### EXAMPLE 2
 ```
-Get-GPOZaurrOwner -Verbose -IncludeSysvol -SkipBroken
+Get-GPORevOwner -Verbose -IncludeSysvol -SkipBroken
 ```
 
 ## PARAMETERS

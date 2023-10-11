@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Save-GPOZaurrFiles
+# Save-GPORevFiles
 
 ## SYNOPSIS
 Exports GPO XML data to files and saves it to a given path
@@ -13,7 +13,7 @@ Exports GPO XML data to files and saves it to a given path
 ## SYNTAX
 
 ```
-Save-GPOZaurrFiles [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>]
+Save-GPORevFiles [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>]
  [[-ExtendedForestInformation] <IDictionary>] [[-GPOPath] <String[]>] [-DeleteExisting] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Exports GPO XML data to files and saves it to a given path
 
 ### EXAMPLE 1
 ```
-Save-GPOZaurrFiles -GPOPath 'C:\Support\GitHub\GpoZaurr\Ignore\GPOExportEvotec' -DeleteExisting -Verbose
+Save-GPORevFiles -GPOPath 'C:\Support\GitHub\GPORev\Ignore\GPOExportEvotec' -DeleteExisting -Verbose
 ```
 
 ## PARAMETERS

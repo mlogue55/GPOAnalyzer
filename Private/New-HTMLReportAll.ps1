@@ -8,7 +8,7 @@
     )
     # Standard reports as requested
     Write-Color -Text '[i]', '[HTML ] ', "Generating HTML report ($FilePath)" -Color Yellow, DarkGray, Yellow
-    New-HTML -Author 'Przemysław Kłys @ Evotec' -TitleText 'GPOZaurr Report' {
+    New-HTML -Author 'Przemysław Kłys @ Evotec' -TitleText 'GPORev Report' {
         New-HTMLTabStyle -BorderRadius 0px -TextTransform capitalize -BackgroundColorActive SlateGrey
         New-HTMLSectionStyle -BorderRadius 0px -HeaderBackGroundColor Grey -RemoveShadow
         New-HTMLPanelStyle -BorderRadius 0px
@@ -20,7 +20,7 @@
                     New-HTMLText -Text "Report generated on $(Get-Date)" -Color Blue
                 } -JustifyContent flex-start -Invisible
                 New-HTMLSection {
-                    New-HTMLText -Text "GPOZaurr - $($Script:Reporting['Version'])" -Color Blue
+                    New-HTMLText -Text "GPORev - $($Script:Reporting['Version'])" -Color Blue
                 } -JustifyContent flex-end -Invisible
             }
         }

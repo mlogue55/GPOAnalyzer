@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrInheritance
+# Get-GPORevInheritance
 
 ## SYNOPSIS
 Short description
@@ -13,7 +13,7 @@ Short description
 ## SYNTAX
 
 ```
-Get-GPOZaurrInheritance [-IncludeBlockedObjects] [-OnlyBlockedInheritance] [-IncludeExcludedObjects]
+Get-GPORevInheritance [-IncludeBlockedObjects] [-OnlyBlockedInheritance] [-IncludeExcludedObjects]
  [-IncludeGroupPoliciesForBlockedObjects] [[-Exclusions] <String[]>] [[-Forest] <String>]
  [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>] [[-ExtendedForestInformation] <IDictionary>]
  [<CommonParameters>]
@@ -26,7 +26,7 @@ Long description
 
 ### EXAMPLE 1
 ```
-$Objects = Get-GPOZaurrInheritance -IncludeBlockedObjects -IncludeExcludedObjects -OnlyBlockedInheritance -Exclusions $ExcludedOU
+$Objects = Get-GPORevInheritance -IncludeBlockedObjects -IncludeExcludedObjects -OnlyBlockedInheritance -Exclusions $ExcludedOU
 ```
 
 $Objects | Format-Table

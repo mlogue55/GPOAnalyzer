@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Export-GPOZaurrContent
+# Export-GPORevContent
 
 ## SYNOPSIS
 Saves GPOs to XML or HTML files.
@@ -13,7 +13,7 @@ Saves GPOs to XML or HTML files.
 ## SYNTAX
 
 ```
-Export-GPOZaurrContent [-FolderOutput] <String> [[-ReportType] <String>] [<CommonParameters>]
+Export-GPORevContent [-FolderOutput] <String> [[-ReportType] <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

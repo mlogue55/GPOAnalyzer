@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Invoke-GPOZaurrContent
+# Invoke-GPORevContent
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -14,7 +14,7 @@ schema: 2.0.0
 
 ### Default (Default)
 ```
-Invoke-GPOZaurrContent [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
+Invoke-GPORevContent [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  [-ExtendedForestInformation <IDictionary>] [-Type <String[]>] [-Splitter <String>] [-FullObjects]
  [-OutputType <String[]>] [-OutputPath <String>] [-Open] [-Online] [-CategoriesOnly] [-SingleObject]
  [-SkipNormalize] [-SkipCleanup] [-Extended] [<CommonParameters>]
@@ -22,7 +22,7 @@ Invoke-GPOZaurrContent [-Forest <String>] [-ExcludeDomains <String[]>] [-Include
 
 ### Local
 ```
-Invoke-GPOZaurrContent [-GPOPath <String>] [-Type <String[]>] [-Splitter <String>] [-FullObjects]
+Invoke-GPORevContent [-GPOPath <String>] [-Type <String[]>] [-Splitter <String>] [-FullObjects]
  [-OutputType <String[]>] [-OutputPath <String>] [-Open] [-Online] [-CategoriesOnly] [-SingleObject]
  [-SkipNormalize] [-SkipCleanup] [-Extended] [<CommonParameters>]
 ```

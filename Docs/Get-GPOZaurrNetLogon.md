@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrNetLogon
+# Get-GPORevNetLogon
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -14,19 +14,19 @@ schema: 2.0.0
 
 ### Default (Default)
 ```
-Get-GPOZaurrNetLogon [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
+Get-GPORevNetLogon [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  [-ExtendedForestInformation <IDictionary>] [<CommonParameters>]
 ```
 
 ### OwnerOnly
 ```
-Get-GPOZaurrNetLogon [-OwnerOnly] [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
+Get-GPORevNetLogon [-OwnerOnly] [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  [-ExtendedForestInformation <IDictionary>] [<CommonParameters>]
 ```
 
 ### SkipOwner
 ```
-Get-GPOZaurrNetLogon [-SkipOwner] [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
+Get-GPORevNetLogon [-SkipOwner] [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  [-ExtendedForestInformation <IDictionary>] [<CommonParameters>]
 ```
 

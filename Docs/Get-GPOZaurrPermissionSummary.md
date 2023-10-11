@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrPermissionSummary
+# Get-GPORevPermissionSummary
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -13,7 +13,7 @@ schema: 2.0.0
 ## SYNTAX
 
 ```
-Get-GPOZaurrPermissionSummary [[-Type] <String[]>] [[-PermitType] <String>]
+Get-GPORevPermissionSummary [[-Type] <String[]>] [[-PermitType] <String>]
  [[-IncludePermissionType] <String[]>] [[-ExcludePermissionType] <String[]>] [[-Forest] <String>]
  [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>] [[-ExtendedForestInformation] <IDictionary>]
  [[-Separator] <String>] [<CommonParameters>]

@@ -4,8 +4,8 @@
         Import-Module $PSScriptRoot\..\*.psd1 -Force
 
     }
-    It 'Get-GPOZaurrOwner - Should return proper data' {
-        $GPOs = Get-GPOZaurrOwner -IncludeSysvol
+    It 'Get-GPORevOwner - Should return proper data' {
+        $GPOs = Get-GPORevOwner -IncludeSysvol
         $GPOs.Count | Should -BeGreaterThan 5
         $GPOs[0].PSObject.Properties.Name | Should -Be @(
             'DisplayName', 'DomainName',
@@ -15,11 +15,11 @@
             'IsOwnerAdministrative', 'SysvolExists', 'DistinguishedName'
         )
     }
-    It 'Set-GPOZaurrOwner - Should set proper data' {
-        Set-GPOZaurrOwner -GPOName 'TEST | GPOZaurr Permissions Testing' -Verbose -Principal 'przemyslaw.klys' -WhatIf:$false -Force
+    It 'Set-GPORevOwner - Should set proper data' {
+        Set-GPORevOwner -GPOName 'TEST | GPORev Permissions Testing' -Verbose -Principal 'przemyslaw.klys' -WhatIf:$false -Force
     }
-    It 'Get-GPOZaurrOwner - Should return proper data for one GPO' {
-        $GPOs = Get-GPOZaurrOwner -IncludeSysvol -GPOName 'TEST | GPOZaurr Permissions Testing'
+    It 'Get-GPORevOwner - Should return proper data for one GPO' {
+        $GPOs = Get-GPORevOwner -IncludeSysvol -GPOName 'TEST | GPORev Permissions Testing'
         $GPOs.SysvolOwner | Should -Be 'EVOTEC\przemyslaw.klys'
         $GPOs.SysvolType | Should -Be 'NotAdministrative'
         $GPOs.Owner | Should -Be 'EVOTEC\przemyslaw.klys'
@@ -27,11 +27,11 @@
         $GPOS.IsOwnerConsistent | Should -Be $true
         $GPOS.IsOwnerAdministrative | Should -Be $false
     }
-    It 'Set-GPOZaurrOwner - Should set proper data' {
-        Set-GPOZaurrOwner -GPOName 'TEST | GPOZaurr Permissions Testing' -Verbose
+    It 'Set-GPORevOwner - Should set proper data' {
+        Set-GPORevOwner -GPOName 'TEST | GPORev Permissions Testing' -Verbose
     }
-    It 'Get-GPOZaurrOwner - Should return proper data for one GPO (Domain Admins)' {
-        $GPOs = Get-GPOZaurrOwner -IncludeSysvol -GPOName 'TEST | GPOZaurr Permissions Testing'
+    It 'Get-GPORevOwner - Should return proper data for one GPO (Domain Admins)' {
+        $GPOs = Get-GPORevOwner -IncludeSysvol -GPOName 'TEST | GPORev Permissions Testing'
         $GPOs.SysvolOwner | Should -Be 'EVOTEC\Domain Admins'
         $GPOs.SysvolType | Should -Be 'Administrative'
         $GPOs.Owner | Should -Be 'EVOTEC\Domain Admins'

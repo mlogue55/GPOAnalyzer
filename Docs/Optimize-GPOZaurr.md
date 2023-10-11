@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Optimize-GPOZaurr
+# Optimize-GPORev
 
 ## SYNOPSIS
 Enables or disables user/computer section of group policy based on it's content.
@@ -14,21 +14,21 @@ Enables or disables user/computer section of group policy based on it's content.
 
 ### GPOName (Default)
 ```
-Optimize-GPOZaurr [[-ExcludeGroupPolicies] <ScriptBlock>] -GPOName <String> [-LimitProcessing <Int32>]
+Optimize-GPORev [[-ExcludeGroupPolicies] <ScriptBlock>] -GPOName <String> [-LimitProcessing <Int32>]
  [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  [-ExtendedForestInformation <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GPOGUID
 ```
-Optimize-GPOZaurr [[-ExcludeGroupPolicies] <ScriptBlock>] -GPOGuid <String> [-LimitProcessing <Int32>]
+Optimize-GPORev [[-ExcludeGroupPolicies] <ScriptBlock>] -GPOGuid <String> [-LimitProcessing <Int32>]
  [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  [-ExtendedForestInformation <IDictionary>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### All
 ```
-Optimize-GPOZaurr [[-ExcludeGroupPolicies] <ScriptBlock>] [-All] [-LimitProcessing <Int32>] [-Forest <String>]
+Optimize-GPORev [[-ExcludeGroupPolicies] <ScriptBlock>] [-All] [-LimitProcessing <Int32>] [-Forest <String>]
  [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -40,12 +40,12 @@ Enables or disables user/computer section of group policy based on it's content.
 
 ### EXAMPLE 1
 ```
-Optimize-GPOZaurr -All -WhatIf -Verbose -LimitProcessing 2
+Optimize-GPORev -All -WhatIf -Verbose -LimitProcessing 2
 ```
 
 ### EXAMPLE 2
 ```
-Optimize-GPOZaurr -All -WhatIf -Verbose -LimitProcessing 2 {
+Optimize-GPORev -All -WhatIf -Verbose -LimitProcessing 2 {
 ```
 
 Skip-GroupPolicy -Name 'TEST | Drive Mapping 1'

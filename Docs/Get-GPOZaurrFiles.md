@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrFiles
+# Get-GPORevFiles
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -13,7 +13,7 @@ schema: 2.0.0
 ## SYNTAX
 
 ```
-Get-GPOZaurrFiles [[-Type] <String[]>] [[-HashAlgorithm] <String>] [-Signature] [-AsHashTable] [-Extended]
+Get-GPORevFiles [[-Type] <String[]>] [[-HashAlgorithm] <String>] [-Signature] [-AsHashTable] [-Extended]
  [-ExtendedMetaData] [[-Forest] <String>] [[-ExcludeDomains] <String[]>] [[-IncludeDomains] <String[]>]
  [[-ExtendedForestInformation] <IDictionary>] [<CommonParameters>]
 ```

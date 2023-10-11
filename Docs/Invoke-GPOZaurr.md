@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Invoke-GPOZaurr
+# Invoke-GPORev
 
 ## SYNOPSIS
 Single cmdlet that provides 360 degree overview of Group Policies in Active Directory Forest.
@@ -13,7 +13,7 @@ Single cmdlet that provides 360 degree overview of Group Policies in Active Dire
 ## SYNTAX
 
 ```
-Invoke-GPOZaurr [[-Exclusions] <Object>] [-FilePath <String>] [[-Type] <String[]>] [-PassThru] [-HideHTML]
+Invoke-GPORev [[-Exclusions] <Object>] [-FilePath <String>] [[-Type] <String[]>] [-PassThru] [-HideHTML]
  [-HideSteps] [-ShowError] [-ShowWarning] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-Online] [-SplitReports] [<CommonParameters>]
 ```
@@ -25,12 +25,12 @@ Single cmdlet that provides 360 degree overview of Group Policies in Active Dire
 
 ### EXAMPLE 1
 ```
-Invoke-GPOZaurr
+Invoke-GPORev
 ```
 
 ### EXAMPLE 2
 ```
-Invoke-GPOZaurr -Type GPOOrganizationalUnit -Online -FilePath $PSScriptRoot\Reports\GPOZaurrOU.html -Exclusions @(
+Invoke-GPORev -Type GPOOrganizationalUnit -Online -FilePath $PSScriptRoot\Reports\GPORevOU.html -Exclusions @(
 ```
 
 '*OU=Production,DC=ad,DC=evotec,DC=pl'

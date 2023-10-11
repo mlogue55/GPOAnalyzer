@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrOrganizationalUnit
+# Get-GPORevOrganizationalUnit
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -13,7 +13,7 @@ schema: 2.0.0
 ## SYNTAX
 
 ```
-Get-GPOZaurrOrganizationalUnit [[-Forest] <String>] [[-ExcludeDomains] <String[]>]
+Get-GPORevOrganizationalUnit [[-Forest] <String>] [[-ExcludeDomains] <String[]>]
  [[-IncludeDomains] <String[]>] [[-ExtendedForestInformation] <IDictionary>] [[-Option] <String[]>]
  [[-ExcludeOrganizationalUnit] <String[]>] [<CommonParameters>]
 ```

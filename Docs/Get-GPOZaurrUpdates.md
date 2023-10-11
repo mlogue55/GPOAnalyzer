@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrUpdates
+# Get-GPORevUpdates
 
 ## SYNOPSIS
 Gets the list of GPOs created or updated in the last X number of days.
@@ -14,13 +14,13 @@ Gets the list of GPOs created or updated in the last X number of days.
 
 ### DateRange (Default)
 ```
-Get-GPOZaurrUpdates [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
+Get-GPORevUpdates [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  -DateRange <String> [-DateProperty <String[]>] [-ExtendedForestInformation <IDictionary>] [<CommonParameters>]
 ```
 
 ### Dates
 ```
-Get-GPOZaurrUpdates [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
+Get-GPORevUpdates [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  -DateFrom <DateTime> -DateTo <DateTime> [-DateProperty <String[]>] [-ExtendedForestInformation <IDictionary>]
  [<CommonParameters>]
 ```
@@ -32,12 +32,12 @@ Gets the list of GPOs created or updated in the last X number of days.
 
 ### EXAMPLE 1
 ```
-Get-GPOZaurrUpdates -DateRange Last14Days -DateProperty WhenCreated, WhenChanged -Verbose -IncludeDomains 'ad.evotec.pl' | Format-List
+Get-GPORevUpdates -DateRange Last14Days -DateProperty WhenCreated, WhenChanged -Verbose -IncludeDomains 'ad.evotec.pl' | Format-List
 ```
 
 ### EXAMPLE 2
 ```
-Get-GPOZaurrUpdates -DateRange Last14Days -DateProperty WhenCreated -Verbose | Format-Table
+Get-GPORevUpdates -DateRange Last14Days -DateProperty WhenCreated -Verbose | Format-Table
 ```
 
 ## PARAMETERS

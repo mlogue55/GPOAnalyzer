@@ -1,11 +1,11 @@
 ---
-external help file: GPOZaurr-help.xml
-Module Name: GPOZaurr
+external help file: GPORev-help.xml
+Module Name: GPORev
 online version:
 schema: 2.0.0
 ---
 
-# Get-GPOZaurrLink
+# Get-GPORevLink
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -14,21 +14,21 @@ schema: 2.0.0
 
 ### Linked (Default)
 ```
-Get-GPOZaurrLink [-Linked <String[]>] [-Limited] [-SkipDuplicates] [-GPOCache <IDictionary>] [-Forest <String>]
+Get-GPORevLink [-Linked <String[]>] [-Limited] [-SkipDuplicates] [-GPOCache <IDictionary>] [-Forest <String>]
  [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>]
  [-AsHashTable] [-Summary] [<CommonParameters>]
 ```
 
 ### ADObject
 ```
-Get-GPOZaurrLink -ADObject <ADObject[]> [-Limited] [-SkipDuplicates] [-GPOCache <IDictionary>]
+Get-GPORevLink -ADObject <ADObject[]> [-Limited] [-SkipDuplicates] [-GPOCache <IDictionary>]
  [-Forest <String>] [-ExcludeDomains <String[]>] [-IncludeDomains <String[]>]
  [-ExtendedForestInformation <IDictionary>] [-AsHashTable] [-Summary] [<CommonParameters>]
 ```
 
 ### Filter
 ```
-Get-GPOZaurrLink [-Filter <String>] [-SearchBase <String>] [-SearchScope <ADSearchScope>] [-Limited]
+Get-GPORevLink [-Filter <String>] [-SearchBase <String>] [-SearchScope <ADSearchScope>] [-Limited]
  [-SkipDuplicates] [-GPOCache <IDictionary>] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>] [-AsHashTable] [-Summary]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ Get-GPOZaurrLink [-Filter <String>] [-SearchBase <String>] [-SearchScope <ADSear
 
 ### Site
 ```
-Get-GPOZaurrLink [-Site <String[]>] [-GPOCache <IDictionary>] [-Forest <String>] [-ExcludeDomains <String[]>]
+Get-GPORevLink [-Site <String[]>] [-GPOCache <IDictionary>] [-Forest <String>] [-ExcludeDomains <String[]>]
  [-IncludeDomains <String[]>] [-ExtendedForestInformation <IDictionary>] [-AsHashTable] [-Summary]
  [<CommonParameters>]
 ```
